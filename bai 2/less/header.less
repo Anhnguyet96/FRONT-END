@@ -1,0 +1,121 @@
+@import "sample.less";
+.header{
+    background: @header-color;
+    padding: 0;
+    .logo{
+        padding-left: 75px;
+    }
+    h1{
+        margin:0;
+    }
+    .navbar-dark{
+        vertical-align: middle;
+        .navbar-toggler{
+             border:none;
+             font-size: 35px;
+             color: #fff;
+        } 
+        button:focus{
+            outline: none;
+        }
+    } 
+}
+.logo {
+    img{
+        padding: 28px 0;
+    }
+    .navbar{
+        padding:0;
+    }
+}
+.navigition{
+    margin: auto 0;
+   padding-right: 64px;
+}
+#menu{
+    .nav-item{
+        padding: 8px 10px;     
+        .nav-link{
+            font-size: 14px;
+            color: @color;
+            text-transform: uppercase;
+            font-weight: normal;
+            padding: 8px 0;
+            text-decoration: none; 
+        }
+        .nav-link:hover{
+            color: #ef6f64;
+        }
+    }
+}
+.dropdown-item{   
+    a{
+        color: #808080;
+        padding:0 20px;
+    }
+    img{
+        margin-right: 10px;
+    }
+}
+
+.dropdown{
+    .dropdown-menu{
+        padding: 15px 0;
+        position: relative; 
+        .dropdown-item();
+        .line{
+            margin: 12px 20px;
+            height: 1px;
+            background: #ccc;
+        }     
+    }  
+    .user {
+        button{
+            float: left;
+            margin-right:8px;
+        }
+    } 
+    .triangle{
+        position: absolute;
+        top:-10px;
+        right: 24%;
+        width:0px;
+        height:0px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 10px solid @color;
+    }
+    
+    button{
+        //font-size: 14px;
+        border:none;
+        background: #111;
+        color: @color;
+        text-transform: uppercase;
+    }
+    button:focus,button:active { 
+        outline: none; 
+        box-shadow: none;      
+    } 
+}
+
+.submit{
+    padding:0;
+    background-image: linear-gradient(to right, #fd9c7b, #ef6f64);
+	border-radius: 120px;
+	color: #fff;
+    text-transform: uppercase;
+	border:none;
+}
+ .register {   
+    padding: 13px 37px 17px 34px;
+    font-size: 14px;
+    margin-right: 0;
+    margin-left:12px;
+    font-weight: bold;
+}
+.register:focus,.registr:active{
+    outline: none;
+    box-shadow: none;
+}
+

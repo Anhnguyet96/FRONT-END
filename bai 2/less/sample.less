@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: myFont;
+    src: url('../font/font/AvertaDemo-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: fontSpecial;
+    src: url('../font/font/AvertaDemo-ExtraBoldItalic.otf');
+    font-style: initial;
+}
+@font: myFont;
+@fontSpecial: fontSecial;
+@font-size: 14px;
+@color: #fff;
+body {
+    font-family: @font;
+    font-size: @font-size;
+    color: @color;
+}
+.container-fluid{
+    padding: 0;
+}
+.container{
+    padding: 0;
+}
+.row{
+    padding:0;
+    margin:0;
+}
+@header-color: #111;
+@bgButton: linear-gradient(to right, #fd9c7b, #ef6f64);
+h3{
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h4{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+a{
+    color: #000;
+    text-decoration:none;
+}
+a:hover{
+    color: #ef6f64;
+    text-decoration: none;
+}
+p{
+    color: #808080;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.border-bottom{
+    border-bottom: 1px solid #ccc;
+}
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1170px;
+    }
+}

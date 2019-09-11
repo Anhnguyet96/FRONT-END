@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ibeau</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/style.js"></script>
+</head>
+<body>
+    <div class="container-fluid header">
+       <div class="row">
+           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3 logo">
+                <h1>
+                    <div class="navbar navbar-expand-lg navbar-dark">
+                            <a class="navbar-branch" href="#">
+                                    <img alt="" src="images/logo.png">
+                            </a>
+                        <button class="navbar-toggler right" type="button" data-toggle="collapse" data-target="#menu">
+                            <span class="navbar-toggler-icon icon"></span>
+                        </button>
+                    </div>
+                </h1>
+           </div>
+           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-9 navigition">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="" class="nav-link" href="#">Ibeau là gì?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link" href="#">Tuyển dụng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link" href="#">Salon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link" href="#">Hướng dẫn</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link" href="#">Kiến thức</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="nav-link dropdown-toggle" data-toggle="dropdown">English&nbsp;</button>
+                                <div class="dropdown-menu dropdown-menu-right" id="language">
+                                    <a class="dropdown-item" href="#">
+                                        <span id="eng">
+                                            <img alt= "" src="./images/America.png">
+                                            Eng
+                                        </span>     
+                                    </a>
+                                    <p class ="line"></p>
+                                    <a class="dropdown-item" href="#">    
+                                        <span>
+                                            <img alt= "" src="./images/Vietnam.png">
+                                            Vie
+                                        </span>
+                                    </a> 
+                                    <div class="triangle"></div>  
+                                </div>
+                            </li>
+                            <li class=" nav-item dropdown">
+                                <div class="user">
+                                    <button class="nav-link dropdown-toggle text-center" data-toggle="dropdown">Justin&nbsp;</button>
+                                    <img alt= "" src="./images/user.png">
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">My account</a>
+                                        <p class ="line"></p>
+                                        <a class="dropdown-item" href="#">Logout</a> 
+                                        <div class="triangle"></div>  
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class=" btn btn-submit submit register ml-auto">Đăng Kí Ngay</button>
+                    </div> <!-- .collapse --> 
+               </nav> 
+           </div>
+       </div>
+    </div> <!-- .container-fluid -->
+   
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-xl-12 map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14897.268139127995!2d105.783933!3d21.019997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa712f13cfc1a4063!2zVMOyYSBuaMOgIE1JVEVD!5e0!3m2!1svi!2sus!4v1565318164239!5m2!1svi!2sus" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="input-group search">
+                <input class="form-control ml-3 inputSearch" type="text" placeholder="Search" >
+                <div class="input-group-append">
+                    <button class="btn btnSeach">
+                        <span class="input-group-text" id="basic-text1"><i class="fas fa-search text-grey"
+                        aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>		
+    </div> 
+    <div class="row main-content">     
+        <div class="container content">
+            <div class="row location">
+                <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10 formSubmit">
+                    <form>
+                        <div class="form-row center">
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">Thành phố</label>
+                                <select id="inputcity" class="form-control">
+                                    <option selected></option>
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">Quận</label>
+                                <select id="inputcity" class="form-control">
+                                    <option selected></option>
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">Dịch vụ</label>
+                                <select id="inputcity" class="form-control">
+                                    <option selected></option>
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 text-center find">   
+                    <button class="btn submit"> Tìm kiếm</button>  
+                </div>
+            </div>
+            
+            <div class="row">
+                <h3 class="text-center">salon nổi bật</h3> 
+                <div class="owl-carousel owl-theme mostList">
+                    <div class="item"> 
+                        <div class="mostItem">
+                            <img alt= "" src="./images/item1.png">
+                            <div class="infoSalon">
+                                <h4 class="storeName">
+                                    <i class="fas fa-tag"></i>
+                                    <a href= "#">Retreat</a>
+                                </h4>
+                                <p>09 ngõ 108 cầu giấy, cầu giấy </p>
+                                <div class="review">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>&nbsp;(8)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"> 
+                        <div class="mostItem">
+                            <img alt= "" src="./images/item2.png">
+                            <div class="infoSalon">
+                                <h4 class="storeName">
+                                    <a href= "#">Gib Bolton Penthouse 1606</a>
+                                </h4>
+                                <p>09 ngõ 108 cầu giấy, cầu giấy </p>
+                                <div class="review">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>&nbsp;(36)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"> 
+                        <div class="mostItem">
+                            <img alt= "" src="./images/item3.png">
+                            <div class="infoSalon">
+                                <h4 class="storeName">
+                                    <a href= "#">Green Apple Skin Care Salon</a>
+                                </h4>
+                                <p>09 ngõ 108 cầu giấy, cầu giấy </p>
+                                <div class="review">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>&nbsp;(11)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"> 
+                        <div class="mostItem">
+                            <img alt= "" src="./images/item4.png">
+                            <div class="infoSalon">
+                                <h4 class="storeName">
+                                    <i class="fas fa-tag"></i>
+                                    <a href= "#">Royal Thai Spa</a>
+                                </h4>
+                                <p>09 ngõ 108 cầu giấy, cầu giấy </p>
+                                <div class="review">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span>&nbsp;(24)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="item"> 
+                        <div class="mostItem">
+                            <img alt= "" src="./images/item1.png">
+                            <div class="infoSalon">
+                                <h4 class="storeName">
+                                    <i class="fas fa-tag"></i>
+                                    <a href= "#">Retreat</a>
+                                </h4>
+                                <p>09 ngõ 108 cầu giấy, Q.Cầu giấy </p>
+                                <div class="review">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>&nbsp;(8)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>       
+        </div>
+    </div>
+</section>
+<main>
+    <section class="container-fluid promotion">
+        <div class="container">
+            <h3 class="text-center">ưu đãi hàng ngày</h3>
+            <div class="listPromotion owl-carousel owl-theme">
+                <div class="item">
+                    <div class="row itemPromotion">
+                        <div class="imagePost"><img alt="" src="./images/post1.png"></div>
+                        <div class="detail">
+                            <h4><a href="#">cạo mặt êm ái</a></h4>
+                            <p>09 ngõ 108 cầu giấy, Q.Cầu giấy </p>
+                            <p class="price">
+                                <span class="oldPrice">650.000</span>
+                                <span class="newPrice">450.000</span>
+                            </p>
+                            <p class="date"><span>Từ ngày: </span>20/10/2018 - 31/10/2018</p>
+                        </div>
+                    </div>
+                    <div class="row itemPromotion">
+                        <div class="imagePost"><img alt="" src="./images/post2.png"></div>
+                        <div class="detail">
+                            <h4><a href="#">gội đầu massage bấm huyệt</a></h4>
+                            <p>09 ngõ 108 cầu giấy, Q.Cầu giấy </p>
+                            <p class="price">
+                                <span class="oldPrice">650.000</span>
+                                <span class="newPrice">450.000</span>
+                            </p>
+                            <p class="date"><span>Từ ngày: </span>20/10/2018 - 31/10/2018</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">     
+                    <div class="row itemPromotion">
+                        <div class="imagePost"><img alt="" src="./images/post3.png"></div>
+                        <div class="detail">
+                            <h4><a href="#">gội xả kỹ càng</a></h4>
+                            <p>09 ngõ 108 cầu giấy, Q.Cầu giấy </p>
+                            <p class="price">
+                                <span class="oldPrice">650.000</span>
+                                <span class="newPrice">450.000</span>
+                            </p>
+                            <p class="date"><span>Từ ngày: </span>20/10/2018 - 31/10/2018</p>
+                        </div>
+                    </div>
+                    <div class="row itemPromotion">
+                        <div class="imagePost"><img alt="" src="./images/post4.png"></div>
+                        <div class="detail">
+                            <h4><a href="#">vuốt sáp/gôm tạo kiểu</a></h4>
+                            <p>09 ngõ 108 cầu giấy, Q.Cầu giấy </p>
+                            <p class="price">
+                                <span class="oldPrice">650.000</span>
+                                <span class="newPrice">450.000</span>
+                            </p>
+                            <p class="date"><span>Từ ngày: </span>20/10/2018 - 31/10/2018</p>
+                        </div>
+                    </div>    
+                </div>
+                <div class="item">     
+                    <div class="row itemPromotion">
+                        <div class="imagePost"><img alt="" src="./images/post1.png"></div>
+                        <div class="detail">
+                            <h4><a href="#">cạo mặt êm ái</a></h4>
+                            <p>09 ngõ 108 cầu giấy, Q.Cầu giấy </p>
+                            <p class="price">
+                                <span class="oldPrice">650.000</span>
+                                <span class="newPrice">450.000</span>
+                            </p>
+                            <p class="date"><span>Từ ngày: </span>20/10/2018 - 31/10/2018</p>
+                        </div>
+                    </div>
+                    <div class="row itemPromotion">
+                        <div class="imagePost"><img alt="" src="./images/post3.png"></div>
+                        <div class="detail">
+                            <h4><a href="#">gội đầu massage bấm huyệt</a></h4>
+                            <p>09 ngõ 108 cầu giấy, cầu giấy </p>
+                            <p class="price">
+                                <span class="oldPrice">650.000</span>
+                                <span class="newPrice">450.000</span>
+                            </p>
+                            <p class="date"><span>Từ ngày: </span>20/10/2018 - 31/10/2018</p>
+                        </div>
+                    </div>      
+                </div>
+                <div class="item">
+                    <div class="row itemPromotion">
+                        <div class="imagePost"><img alt="" src="./images/post2.png"></div>
+                        <div class="detail">
+                            <h4><a href="#">gội xả kĩ càng</a></h4>
+                            <p>09 ngõ 108 cầu giấy, cầu giấy </p>
+                            <p class="price">
+                                <span class="oldPrice">650.000</span>
+                                <span class="newPrice">450.000</span>
+                            </p>
+                            <p class="date" ><span>Từ ngày: </span>20/10/2018 - 31/10/2018</p>
+                        </div>
+                    </div>
+                    <div class="row itemPromotion">
+                        <div class="imagePost"><img alt="" src="./images/post4.png"></div>
+                        <div class="detail">
+                            <h4><a href="#">cạo mặt êm ái</a></h4>
+                            <p>09 ngõ 108 cầu giấy, cầu giấy </p>
+                            <p class="price">
+                                <span class="oldPrice">650.000</span>
+                                <span class="newPrice">450.000</span>
+                            </p>
+                            <p class="date"><span>Từ ngày: </span>20/10/2018 - 31/10/2018</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="item">
+                    <div class="row itemPromotion">
+                        <div class="imagePost"><img alt="" src="./images/post1.png"></div>
+                        <div class="detail">
+                            <h4><a href="#">cạo mặt êm ái</a></h4>
+                            <p>09 ngõ 108 cầu giấy, cầu giấy </p>
+                            <p class="price">
+                                <span class="oldPrice">650.000</span>
+                                <span class="newPrice">450.000</span>
+                            </p>
+                            <p class="date"><span>Từ ngày: </span>20/10/2018 - 31/10/2018</p>
+                        </div>
+                    </div>
+                    <div class="row itemPromotion">
+                        <div class="imagePost"><img alt="" src="./images/post3.png"></div>
+                        <div class="detail">
+                            <h4><a href="#">gội đầu massage bấm huyệt</a></h4>
+                            <p>09 ngõ 108 cầu giấy, cầu giấy </p>
+                            <p class="price">
+                                <span class="oldPrice">650.000</span>
+                                <span class="newPrice">450.000</span>
+                            </p>
+                            <p  class="date"><span>Từ ngày: </span>20/10/2018 - 31/10/2018</p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section> 
+    <section class="container-fluid artList">
+        <h3 class="text-center">người nổi tiếng nói gì về ibeau</h3>
+        <div class="container">
+            <div class="row art">
+                <div class="artist col-sm-6 col-md-3 col-xl-3">
+                    <img alt="" src="./images/art1.png">
+                    <h4 class="name">Phan Minh Huyền</h4>
+                    <p >(Huyền Lizzie – Diễn viên)</p>
+                </div>
+                <div class="artist col-sm-6 col-md-3 col-xl-3">
+                    <img alt="" src="./images/art2.png">
+                    <h4 class="name">Nguyễn Minh Trang</h4>
+                    <p>(Mẹ Daisy – MC Đài truyền hình VN)</p>
+                </div>
+                <div class="artist col-sm-6 col-md-3 col-xl-3">
+                    <img alt="" src="./images/art3.png">
+                    <h4 class="name">Nguyễn Minh Hà</h4>
+                    <p>(MC Đài truyền hình Việt Nam)</p>
+                </div>
+                <div class="artist col-sm-6 col-md-3 col-xl-3">
+                    <img alt="" src="./images/art4.png">
+                    <h4 class="name">Võ Hoàng Ngọc Anh</h4>
+                    <p>(Julie Võ- MC)</p>
+                </div>    
+            </div>
+        </div>
+    </section>
+    <section class="app container-fluid">
+        <div class="container">
+            <div class="row introApp">
+                <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 reviewApp">
+                    <div class="intro">
+                        <h3>Giới thiệu app ibeau</h3>
+                        <p>It is a long established fact that a reader will be distracted by the read able content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                        <a><img alt="" src="./images/app1.png"></a>
+                        <a><img alt="" src="./images/app2.png"></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 phone">
+                    <img alt="" src="./images/phone.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid info">
+        <div class="container">
+            <h3 class="text-center">Tin tức</h3>
+            <div class="row listPlace">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 place">
+                    <a href="#"><img src="./images/place1.png"></a>
+                    <h4><a href="#">word startup meeting</a></h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae semper nulla. Nunc tempus consequat blandit. Sed nec risus sapien.
+                    </p>
+                    <a href="#" class="link">Xem thêm</a>	
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 place">
+                    <a href="#"><img  src="./images/place2.png"></a>
+                    <h4><a href="#">word startup meeting</a></h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae semper nulla. Nunc tempus consequat blandit. Sed nec risus sapien.
+                    </p>
+                    <a href="#" class="link">Xem thêm</a>	
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 place">
+                    <a href="#"><img src="./images/place3.png"></a>
+                    <h4><a href="#">word startup meeting</a></h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae semper nulla. Nunc tempus consequat blandit. Sed nec risus sapien.
+                    </p>
+                    <a href="#" class="link">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid gif">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 saleOff">
+                    <div>
+                        <img alt="" src="./images/gif-full.png">
+                        <div>
+                            <p class="dateSale">black friday</p>
+                            <p class="rate">30<sup>%</sup>off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 formRegister">
+                    <div class="row submitForm">
+                        <p>Đăng ký <br>nhận ngay ưu đãi</p>
+                        <form class="form-group">
+                            <input type="text" class="form-control" placeholder="Họ và tên">
+                            <input type="text" class="form-control" placeholder="Email">
+                            <input type="text" class="form-control" placeholder="Số điện thoại">
+                            <div class="row">
+                                <div class=" col-xs-12 col-sm-12 col-md-6 city">
+                                    <div class="nameCity">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="hanoi" id="hanoi">
+                                            <label class="form-check-label" for="hanoi">
+                                                Hà Nội
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 city">
+                                    <div class="nameCity">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="hochiminh" id="hochiminh" checked>
+                                            <label class="form-check-label" for="hochiminh">
+                                                Hồ Chí Minh
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="submit">đăng kí nhận tư vấn</button>
+                        </form>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+	<footer>
+        <div class="container">
+            <div class="row foot">
+                <!-- address -->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 contact">
+                    <a href="#"><img src="images/logo-f.png"></a>
+                    <p class="technology">Arrowhitech TECHNOLOGY JSC</p>
+                    <div class="addr">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span class="text1">8F, MITEC Building, Duong Dinh Nghe Street,</span>
+                        <span class="text2">Yen Hoa Ward, Cau Giay District, Hanoi, Vietnam</span>
+                    </div>
+                    <div class="tel">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:098765432">+842437955813</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:support@arrowhitech.com">support@arrowhitech.com</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
+                    </div>   
+                </div>
+                <!-- end address -->
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 about-item ">
+                    <h4>Về chúng tôi</h4>
+                    <p>
+                        <i class="fas fa-angle-right"></i>&ensp;
+                        <a href="#">Công ty của chúng tôi</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-angle-right"></i>&ensp;
+                        <a href="#">Liên hệ chúng tôi</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-angle-right"></i>&ensp;
+                        <a href="#">Dịch vụ của chúng tôi</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-angle-right"></i>&ensp;
+                        <a href="#">Nghề nghiệp</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-angle-right"></i>&ensp;
+                        <a href="#">Đội của chúng tôi</a>
+                    </p>                   
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 about-item support">
+                    <h4>Hỗ trợ</h4>
+                    <p>
+                        <i class="fas fa-angle-right"></i>&ensp;
+                        <a href="#">Điều khoản sử dụng</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-angle-right"></i>&ensp;
+                        <a href="#">Câu hỏi thường gặp</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-angle-right"></i>&ensp;
+                        <a href="#">Chính sách bảo mật</a>
+                    </p>    
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 page" >
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Farrowhitech%2F&tabs=timeline&width=370px&height=300px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="370px" height="310px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+				</div>
+                <!-- end facebook -->
+            </div>
+
+            <div class="row foot-b">
+                <div class="col-sm-12 col-md-12 col-xl-12">
+                    <img src="images/app1.png">
+                    <img src="images/app2.png">    
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!-- end footer -->  
+</main>       
+</body>
+</html>

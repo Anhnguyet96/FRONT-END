@@ -1,0 +1,329 @@
+@import "sample.less";
+@import "header.less";
+@import "main.less";
+@import "footer.less";
+@media screen and (min-width: 1500px){
+    .header{  
+        .navigition{
+            .navbar{
+                padding: 7px 16px 9px;
+            }
+        }
+    }
+    
+    #menu{
+        .nav-item{
+            padding: 8px 17.5px;  
+        } 
+        .nav-item:first-child{
+            padding-right: 16px;
+        } 
+        .nav-item:last-child{
+            padding-left:24px;
+        } 
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1350px){
+    .header{
+        .logo{
+            padding-left: 15px;
+        }
+        .navigition{
+            padding:0;
+            margin-left: -30px;
+            .navbar{
+                padding: 0;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px)
+{
+    button.ml-auto{
+        margin-left: 14.5px !important;
+    }
+    .listPlace, .artList .art{
+        margin: 0 -15px;
+    }
+    .phone{
+        padding-left: 34px;
+    }
+    .gif{
+        .saleOff{
+            img{
+                margin-left:-111px;
+            }
+        }
+    }
+    .page{
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    
+ }
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .header{
+        .logo{
+           a{
+               margin-left: 19%;
+               padding-top: 20px;
+           }
+        }
+    }
+    .navigition{
+        padding: 0;
+    }
+    #menu{
+        ul{
+            margin-left: 0 !important;
+        }
+        text-align: right;
+    }
+
+    .logo img{
+        padding:0;
+    }
+    .listPromotion{
+        .itemPromotion{
+            margin-right: 0;
+            display: flex;   
+            flex-flow:column nowrap;
+            .date{
+                padding-bottom: 30px;
+            }
+        }   
+    }
+    .gif{
+        .dateSale{
+            left: 22%;
+        }
+        .rate{
+            left:16%;
+        }
+    }
+    .page{
+        margin: 60px auto 0;
+    }
+}
+@media screen and (max-width: 991px){
+    .map{
+        iframe{
+            height: 740px;
+            clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+        }
+    }
+   .header{
+       .logo{
+           padding-left: 15px;
+           img {
+            padding: 20px 0 10px;
+            max-width: 80%;
+            }
+       }
+       .navigition{
+            padding-left: 15px;
+            .navbar{
+                padding: 0;
+            }
+        }
+   }
+   #menu{
+    .nav-item{
+        padding-left: 0px;
+    }
+   }
+    
+    .register{
+        margin:15px;
+    }
+    .triangle{
+        position: absolute;
+        left:45px;
+        top:10px;
+    }
+    .content{
+        button{
+            margin: 0 45px 30px;
+        }
+        .find{
+            margin:0;
+        }
+    }
+    .app{
+        .introApp{
+            .reviewApp{
+                p{
+                    max-width: 100%;
+                }
+                text-align: center;
+            }
+        }
+    }
+    .info{
+        padding:0;
+    }
+    .place{
+        padding-bottom: 40px;
+        img{
+            width: 100%;
+        }
+    }
+    .gif{
+        .dateSale{
+            left: 23%;
+        }
+        .rate{
+            left:18%;
+        }
+    }
+    .formRegister{
+        p{
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+        .form-group{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .content{
+        button{
+            margin: 0 45px 30px;
+        }
+    } 
+    .city:first-child{
+        padding-right:0;
+    } 
+    .city:last-child{
+        padding-left:0;
+    } 
+}
+@media screen and (min-width: 400px) and (max-width: 575px){
+    .gif{
+        .dateSale{
+            left: 30%;
+            font-size: 30px;
+        }
+        .rate{
+            left:28%;
+            font-size: 70px;
+        }
+    }
+}
+@media screen and (max-width: 575px){
+    .map, .promotion, .intro, .app, .gif{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .map{
+        iframe{
+            height: 400px;
+        }
+    }
+    .main-content, .artList{
+        h3{
+            margin-top: 60px;
+        }
+    }
+    .main-content{
+        padding-bottom: 30px;
+    }
+    .promotion{
+        padding-bottom: 0;
+        h3{
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+    }
+    .artList {
+        padding-bottom: 44px;
+    }
+    .app{
+        padding-bottom: 20px;
+    }
+    .info {
+        h3{
+            margin: 60px 0 45px;
+        }
+    }
+    .artist,.intro,.listPlace{
+        text-align: center;
+    }
+    .listPromotion, .mostList, .place{
+        padding: 0 15px;
+    }
+    .phone{
+        padding-bottom: 40px;
+    }
+    .content{
+        form{
+            padding-left: 30px;
+            padding-right: 0;
+        }
+    }
+    .listPromotion{
+        .itemPromotion{
+            margin-right: 0;
+            display: flex;   
+            flex-flow:column nowrap;
+            .date{
+                padding-bottom: 30px;
+            }
+        } 
+        padding-bottom: 60px;  
+    } 
+    .intro{
+        h3{
+            margin-top: 60px;
+        }
+        img{
+            padding-right: 0;
+        }
+    }
+    .place {
+        img{
+            width: 100%;
+        } 
+        padding-bottom: 60px;
+    }
+    .gif{
+        padding-top: 60px;
+        padding-bottom: 45px; 
+        .dateSale{
+            font-size: 22px;
+        }
+        .rate{
+            font-size: 55px;
+            sup{
+                margin-right: 10px;
+            }
+        }
+    }
+    .formRegister{
+        p{
+            font-size: 20px;
+            margin-top: 40px;
+        }
+    }
+    .contact,.about-item,.intro p{
+        padding-left: 15px;
+    }
+    .contact{
+        img{
+            margin-top: 60px;
+        }
+        .addr{
+            .text2{
+                margin-left: 0;
+            }
+        }
+    }
+    .about-item, .page{
+        margin-top: 60px;
+    }
+    .foot-b img{
+        padding: 15px 0px;
+    }
+}
